@@ -1,0 +1,129 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <title>Services</title>
+    <style>
+        body {
+            background-color: rgb(173, 163, 171);
+        }
+
+        .main{
+            padding: 2%;
+        }
+        .container-fluid {
+
+            background-color: rgb(221, 68, 137);
+            padding: 0.2% 0px 0.2% 0px;
+            font-size: 2.5vh;
+            font-weight: bold;
+            z-index: 1;
+            bottom: -5%;
+        }
+
+        .container-fluid a {
+            color: white;
+        }
+
+        .form-select {
+            padding: 1%;
+        }
+
+        .card {
+            margin-top: 1%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+
+            <img class="logo" src="logo2.1.png" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About us</a>
+                    </li>
+            </div>
+            <a class="nav-link" href="login.html">Clients login</a>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="card">
+            <div class="card-header">
+                <p class="fs-4">Open account</p>
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote">
+                    <p class="fs-5">Enter proper details
+                </blockquote>
+            </div>
+        </div>
+        <hr>
+        <!-- <p class="fs-2">.fs-2 text</p>
+    <p class="fs-5">.fs-3 text</p> -->
+        <form class="row g-3 needs-validation">
+            <div class="col-md-4">
+                <label for="validationCustom01" class="form-label">
+                    <p class="fs-4">First Name</p>
+                </label>
+                <input type="text" class="form-control" id="validationCustom01" required>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustom01" class="form-label">
+                    <p class="fs-4">Last name</p>
+                </label>
+                <input type="text" class="form-control" id="validationCustom01" required>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustom02" class="form-label">
+                    <p class="fs-4">User name</p>
+                </label>
+                <input type="text" class="form-control" id="validationCustom02" required>
+            </div>
+            <hr>
+            <select class="form-select">
+                <option class="fs-4">Select Your Services</option>
+                <option class="fs-5" value="1">Open Account</option>
+                <option class="fs-5" value="2">Loan </option>
+                <option class="fs-5" value="3">Invest in Stocks</option>
+                <option class="fs-5" value="4">Fixed Diposit</option>
+            </select>
+            <hr>
+            <div class="col-12">
+                <button class="btn btn-dark" type="submit">Submit form</button>        
+            </div>
+            <hr>
+            <hr>
+            <div class="alert alert-dark" role="alert">
+                <h4 class="alert-heading">Well done!</h4>
+                <p class="fs-4">When our team receives your information, we will assign the best agent to your selected
+                    service.</p>
+                <hr>
+                <p class="fs-5">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+
+</html>

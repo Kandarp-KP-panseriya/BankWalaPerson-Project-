@@ -12,9 +12,10 @@
             background-color: rgb(173, 163, 171);
         }
 
-        .main{
+        .main {
             padding: 2%;
         }
+
         .container-fluid {
 
             background-color: rgb(221, 68, 137);
@@ -36,7 +37,7 @@
         .card {
             margin-top: 1%;
         }
-        
+
         @media (width <=598px) {
             .logo {
                 display: none;
@@ -74,17 +75,18 @@
     <div class="main">
         <div class="card">
             <div class="card-header">
-                <p class="fs-4">Open account</p>
-            </div>
-            <div class="card-body">
-                <blockquote class="blockquote">
-                    <p class="fs-5">Enter proper details
-                </blockquote>
+                <p class="fs-4" id="so">Select Your Services</p>
             </div>
         </div>
         <hr>
-        <!-- <p class="fs-2">.fs-2 text</p>
-    <p class="fs-5">.fs-3 text</p> -->
+        <select class="form-select" id="select" onclick="okok();">
+            <option class="fs-4">Select Your Services</option>
+            <option class="fs-5" value="Open Account">Open Account</option>
+            <option class="fs-5" value="Loan">Loan </option>
+            <option class="fs-5" value="Invest in Stocks">Invest in Stocks</option>
+            <option class="fs-5" value="Fixed Diposit">Fixed Diposit</option>
+        </select>
+        <hr>
         <form class="row g-3 needs-validation">
             <div class="col-md-4">
                 <label for="validationCustom01" class="form-label">
@@ -105,18 +107,9 @@
                 <input type="text" class="form-control" id="validationCustom02" required>
             </div>
             <hr>
-            <select class="form-select">
-                <option class="fs-4">Select Your Services</option>
-                <option class="fs-5" value="1">Open Account</option>
-                <option class="fs-5" value="2">Loan </option>
-                <option class="fs-5" value="3">Invest in Stocks</option>
-                <option class="fs-5" value="4">Fixed Diposit</option>
-            </select>
-            <hr>
             <div class="col-12">
-                <button class="btn btn-dark" type="submit">Submit form</button>        
+                <button class="btn btn-dark" type="submit">Submit form</button>
             </div>
-            <hr>
             <hr>
             <div class="alert alert-dark" role="alert">
                 <h4 class="alert-heading">Well done!</h4>
@@ -131,5 +124,12 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
     crossorigin="anonymous"></script>
+    <script>
+        function okok()
+        {
+            let a = document.getElementById('select').value;
+            document.getElementById('so').innerHTML = a;
+        }
+    </script>
 
 </html>
